@@ -32,5 +32,10 @@ describe('MathService', () => {
         const result = service.percentage(200, 10);
         expect(result).toBe(20);
     });
+
+    test('should return the cosine of a number', () => {
+        const result = service.cos(0);
+        expect(result).toBe(1);
+    })
   
 });

@@ -1,12 +1,12 @@
 import { request, response } from "express";
-import Math from "../models/Math";
+import Maths from "../models/Math";
 
 class MathService {
 
     math;
 
     constructor() {
-        this.math = new Math();
+        this.math = new Maths();
     }
 
     add(a, b) {
@@ -49,7 +49,12 @@ class MathService {
       return this.math.percentage(Number(a), Number(b));
     }
 
-
+    cos(a) {
+        if (isNaN(a)) {
+          throw new Error('Invalid input: a must be a number');
+        }
+        return this.math.cos(Number(a));
+      }
 }
 
 export default MathService;

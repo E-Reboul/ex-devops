@@ -1,4 +1,4 @@
-class Math {
+class Maths {
     constructor() {}
 
     add(a, b) {
@@ -20,6 +20,10 @@ class Math {
     percentage(a, b) {
         return (a * b) / 100;
     }
+
+    cos(a) {
+        return Math.cos(a)
+    }
 }
 
-export default Math;
+export default Maths;
