@@ -69,6 +69,13 @@ class MathService {
         }
         return this.math.tan(Number(a));
     }
+
+    pow(a, b) {
+        if (isNaN(a) || isNaN(b)) {
+          throw new Error('Invalid input: a and b must be numbers');
+        }
+        return this.math.pow(Number(a), Number(b));
+      }
 }
 
 export default MathService;

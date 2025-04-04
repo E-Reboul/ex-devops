@@ -47,5 +47,10 @@ describe('MathService', () => {
         const result = service.tan(0);
         expect(result).toBe(0);
     });
+
+    test('should return the power of a number', () => {
+        const result = service.pow(2, 3);
+        expect(result).toBe(8);
+    });
   
 });

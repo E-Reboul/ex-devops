@@ -32,6 +32,10 @@ class Maths {
     tan(a) {
         return Math.tan(a);
     }
+
+    pow(a, b) {
+        return Math.pow(a, b);
+    }
 }
 
 export default Maths;
