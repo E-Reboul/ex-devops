@@ -55,6 +55,18 @@ class MathController {
             res.status(400).json({ error: error.message });
         }
     }
+
+    percentage(req, res) {
+        try {
+            const a = req.params?.a;
+            const b = req.params?.b;
+    
+            const result = this.mathService.percentage(a, b);
+            res.status(200).json({ result });
+        } catch (error) {
+            res.status(400).json({ error: error.message });
+        }
+    }
 }
 
 export default MathController;
