@@ -16,12 +16,19 @@ describe('MathService', () => {
     test('should return the difference of two numbers', () => {
         const result = service.substract(5, 3);
         expect(result).toBe(2);
-    })
+    });
 
     test('should return the product of two numbers', () => {
         const result = service.multiply(2, 3);
         expect(result).toBe(6);
-    })
+    });
+
+    test('should return the quotient of two numbers', () => {
+        const result = service.divide(6, 3);
+        expect(result).toBe(2);
+    });
+
+
 
   
 });

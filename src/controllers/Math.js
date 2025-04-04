@@ -43,6 +43,18 @@ class MathController {
             res.status(400).json({ error: error.message });
         }
     }
+
+    divide(req, res) {
+        try {
+            const a = req.params?.a;
+            const b = req.params?.b;
+    
+            const result = this.mathService.divide(a, b);
+            res.status(200).json({ result });
+        } catch (error) {
+            res.status(400).json({ error: error.message });
+        }
+    }
 }
 
 export default MathController;
