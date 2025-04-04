@@ -15,6 +15,13 @@ class MathService {
         }
         return Number(a) + Number(b);
       }
+
+    substract(a, b) {
+        if (isNaN(a) || isNaN(b)) {
+          throw new Error('Invalid input: a and b must be numbers');
+        }
+        return Number(a) - Number(b);
+      }
 }
 
 export default MathService;
