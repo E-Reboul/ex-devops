@@ -28,7 +28,9 @@ describe('MathService', () => {
         expect(result).toBe(2);
     });
 
-
-
+    test('should return the percentage of two numbers', () => {
+        const result = service.percentage(200, 10);
+        expect(result).toBe(20);
+    });
   
 });
