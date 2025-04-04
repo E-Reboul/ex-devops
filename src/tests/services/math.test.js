@@ -37,5 +37,10 @@ describe('MathService', () => {
         const result = service.cos(0);
         expect(result).toBe(1);
     })
+
+    test('should return the sine of a number', () => {
+        const result = service.sin(0);
+        expect(result).toBe(0);
+    })
   
 });

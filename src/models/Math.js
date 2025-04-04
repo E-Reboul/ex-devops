@@ -22,7 +22,11 @@ class Maths {
     }
 
     cos(a) {
-        return Math.cos(a)
+        return Math.cos(a);
+    }
+
+    sin(a) {
+        return Math.sin(a);
     }
 }
 
