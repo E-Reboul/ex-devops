@@ -28,6 +28,10 @@ class Maths {
     sin(a) {
         return Math.sin(a);
     }
+
+    tan(a) {
+        return Math.tan(a);
+    }
 }
 
 export default Maths;

@@ -62,6 +62,13 @@ class MathService {
         }
         return this.math.sin(Number(a));
     }
+
+    tan(a) {
+        if (isNaN(a)) {
+          throw new Error('Invalid input: a must be a number');
+        }
+        return this.math.tan(Number(a));
+    }
 }
 
 export default MathService;
