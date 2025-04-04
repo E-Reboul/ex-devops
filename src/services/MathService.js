@@ -55,6 +55,13 @@ class MathService {
         }
         return this.math.cos(Number(a));
       }
+    
+    sin(a) {
+        if (isNaN(a)) {
+          throw new Error('Invalid input: a must be a number');
+        }
+        return this.math.sin(Number(a));
+    }
 }
 
 export default MathService;
