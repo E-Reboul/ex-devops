@@ -76,6 +76,13 @@ class MathService {
         }
         return this.math.pow(Number(a), Number(b));
       }
+
+    sqrt(a) {
+        if (isNaN(a)) {
+          throw new Error('Invalid input: a must be a number');
+        }
+        return this.math.sqrt(Number(a));
+      }
 }
 
 export default MathService;

@@ -52,5 +52,10 @@ describe('MathService', () => {
         const result = service.pow(2, 3);
         expect(result).toBe(8);
     });
+
+    test('should return the square root of a number', () => {
+        const result = service.sqrt(4);
+        expect(result).toBe(2);
+    })
   
 });

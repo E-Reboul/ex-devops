@@ -36,6 +36,10 @@ class Maths {
     pow(a, b) {
         return Math.pow(a, b);
     }
+
+    sqrt(a) {
+        return Math.sqrt(a);
+    }
 }
 
 export default Maths;
