@@ -18,5 +18,10 @@ describe('MathService', () => {
         expect(result).toBe(2);
     })
 
+    test('should return the product of two numbers', () => {
+        const result = service.multiply(2, 3);
+        expect(result).toBe(6);
+    })
+
   
 });
