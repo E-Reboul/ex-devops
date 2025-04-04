@@ -89,6 +89,17 @@ class MathController {
             res.status(400).json({ error: error.message });
         }
     }
+
+    tan(req, res) {
+        try {
+            const a = req.params?.a;
+    
+            const result = this.mathService.tan(a);
+            res.status(200).json({ result });
+        } catch (error) {
+            res.status(400).json({ error: error.message });
+        }
+    }
 }
 
 export default MathController;

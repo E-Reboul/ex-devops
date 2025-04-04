@@ -36,11 +36,16 @@ describe('MathService', () => {
     test('should return the cosine of a number', () => {
         const result = service.cos(0);
         expect(result).toBe(1);
-    })
+    });
 
     test('should return the sine of a number', () => {
         const result = service.sin(0);
         expect(result).toBe(0);
-    })
+    });
+
+    test('should return the tangent of a number', () => {
+        const result = service.tan(0);
+        expect(result).toBe(0);
+    });
   
 });
